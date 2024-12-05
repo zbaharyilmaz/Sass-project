@@ -2,6 +2,9 @@
 //*   NAV
 //*****************************************************
 
+@use '../abstracts/mixins';
+@use '../abstracts/variables';
+
 
 
 .nav{
@@ -23,15 +26,15 @@
         text-transform: uppercase;
         text-decoration: none;
         font-size: 1.3rem;
-        font-family: $font-family;
+        font-family: variables.$font-family;
         font-weight: 500;
-        @include soft(0.5s);
+        @include mixins.soft(0.5s);
     
         &:hover{
             color: blue;
         }
         &--active{
-            color: $secondary-color;
+            color: variables.$secondary-color;
         }
 
     }
